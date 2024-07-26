@@ -1,2 +1,11 @@
 # systemd_services
-welle-cli: for restarting rtl_tcp on remote router and starting welle-cli in webesrver mode
+
+1.welle-cli: 
+            for restarting rtl_tcp on remote router and starting welle-cli in webesrver mode
+
+
+ssh-keygen -t rsa -b 4096
+
+ssh-copy-id root@192.168.1.1
+
+----------------------------
