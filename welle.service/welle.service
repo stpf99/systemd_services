@@ -1,0 +1,13 @@
+[Unit]
+Description=Welle CLI with remote rtl_tcp restart
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c "/usr/local/bin/restart_rtl_tcp.sh"
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
