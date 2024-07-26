@@ -1,6 +1,6 @@
 # systemd_services
 
-1.welle-cli: 
+1.welle.service: 
             for restarting rtl_tcp on remote router and starting welle-cli in webesrver mode
 
 
