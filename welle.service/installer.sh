@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Kopiowanie skryptu do lokalizacji /usr/local/bin
-cp restart_rtl_tcp.sh /usr/local/bin/restart_rtl_tcp.sh
+sudo cp restart_rtl_tcp.sh /usr/local/bin/restart_rtl_tcp.sh
 
 # Ustawienie uprawnień do wykonywania skryptu
-chmod +x /usr/local/bin/restart_rtl_tcp.sh
+sudo chmod +x /usr/local/bin/restart_rtl_tcp.sh
 
 # Kopiowanie pliku usługi do katalogu systemd
-cp welle.service /etc/systemd/system/welle.service
+sudo cp welle.service /etc/systemd/system/welle.service
 
 # Przeładowanie konfiguracji systemd
 sudo systemctl daemon-reload
